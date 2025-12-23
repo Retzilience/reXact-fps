@@ -82,8 +82,9 @@ The wireframe reticle is not affected by interpolation, and the target is render
 - **Engine 120 / Visual 60** often feels more responsive than **Engine 60 / Visual 120**, even though the latter shows more frames.
 - A higher engine rate means input is incorporated more frequently.
 - A higher visual rate with a lower engine rate can look smoother, but responsiveness is still limited by engine steps.
+- Interpolation can make low frame rates look smoother while giving a misleading sense of responsiveness.\*
 
-This also makes a useful stand-in for understanding frame insertion or frame generation: extra in-between frames can look smoother, but if they don’t advance the simulation, responsiveness does not improve in the same way.
+\*This also makes a useful stand-in for understanding frame insertion or frame generation: extra in-between frames can look smoother, but if they don’t advance the simulation, responsiveness does not improve in the same way.
 
 ---
 
