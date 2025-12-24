@@ -50,10 +50,12 @@ If Engine FPS is higher than Visual FPS, the simulation can advance several step
 
 ### Real-time reticle vs simulated dot
 
+![Wireframe vs solid reticle visualization](https://github.com/Retzilience/reXact-fps/blob/main/assets/s1.png?raw=true)
+
 You will see two indicators:
 
-- **Wireframe reticle**: a best-effort, “right now” estimate of your input.
-- **Solid glowing dot**: the simulated state, updated only on engine steps.
+- **Wireframe reticle (1)**: a best-effort, “right now” estimate of your input.
+- **Solid glowing dot (2)**: the simulated state, updated only on engine steps.
 
 In controller mode, the reticle is integrated at render time from the latest stick values. When Engine FPS is low (or the engine can’t keep up), the reticle can move ahead of the simulated dot. That separation is intentional: it visualizes fixed-step latency and stair-stepping.
 
