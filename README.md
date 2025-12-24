@@ -29,6 +29,19 @@ Input polling is coupled with the engine FPS, they are virtually the same thing 
 
 ---
 
+## What this tool is not
+
+It is not:
+
+- a benchmark,
+- a score-based test,
+- a performance competition,
+- a “best settings” advisor.
+
+If two configurations feel different, that difference is the result—not a bug to fix.
+
+---
+
 ## What it’s useful for
 
 reXact-fps is useful when you want to:
