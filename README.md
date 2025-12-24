@@ -11,11 +11,21 @@
 
 ## What this is
 
-reXact-fps is a small, focused timing and responsiveness testbed.
+reXact-fps is a small, focused testbed for studying timing and responsiveness in interactive systems.
 
-It lets you control **how often the simulation advances** (Engine FPS) and **how often frames are presented** (Visual FPS) independently, while you move a cursor using either a controller stick or the mouse. The goal is not to measure peak performance or produce a single “score”, but to make differences in input timing, stepping, interpolation, and presentation behavior easy to see and feel.
+It allows you to control **how often the simulation advances** (Engine FPS) and **how often frames are rendered and presented** (Visual FPS) independently, while moving a cursor using either a controller stick or a mouse. The purpose is not to benchmark peak performance or produce a single score, but to make differences in input timing, fixed-step behavior, interpolation, and presentation immediately visible and directly perceptible.
 
-Instead of arguing abstractly about refresh rates, frame pacing, interpolation, or input lag, this gives you a concrete way to observe what actually changes when you adjust those variables.
+Most interactive systems—games, simulations, and UIs—silently combine several distinct clocks:
+
+- input sampling (mouse, controller, OS),
+- simulation updates (the engine advancing state),
+- rendering (producing frames),
+- presentation (displaying those frames).
+
+In typical engines, these clocks are tightly coupled, hidden behind abstractions, or masked by interpolation, buffering, and frame-pacing strategies. As a result, discussions about responsiveness tend to collapse into vague or overloaded terms such as “FPS”, “input lag”, or “smoothness”, with no clear distinction between cause and effect.
+
+reXact-fps exists to control those clocks, let you modulate them independently, and make their interactions observable. Instead of considering abstractly about refresh rates, frame generation, or latency, it provides a concrete way to see—and feel—what actually changes when each part of the pipeline is adjusted.
+Input polling is coupled with the engine FPS, they are virtually the same thing in this setting.
 
 ---
 
