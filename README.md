@@ -35,7 +35,6 @@ It is not:
 
 - a benchmark,
 - a score-based test,
-- a performance competition,
 - a “best settings” advisor.
 
 If two configurations feel different, that difference is the result—not a bug to fix.
