@@ -49,7 +49,6 @@ reXact-fps is useful when you want to:
 - See how **low engine rates** introduce stepping and latency, even when visuals are smooth.
 - Understand what **interpolation** does (and does not do) for responsiveness.
 - Compare behavior across **different displays, sync modes, drivers, compositors, and OS setups**.
-- Sanity-check assumptions about “higher FPS always feels better”.
 
 The same Engine FPS / Visual FPS numbers can feel very different depending on the full pipeline from input sampling to display update. This tool makes those differences visible instead of theoretical.
 
